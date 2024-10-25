@@ -16,5 +16,5 @@ export function getOpenAIModel(apiKey: string) {
     baseURL: process.env.BASE_URL,
   });
 
-  return openai('gpt-4o');
+  return openai(process.env.MODEL as string);
 }
